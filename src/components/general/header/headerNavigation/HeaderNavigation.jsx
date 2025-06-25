@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
+import "./HeaderNavigation.css";
 
 const Navigation = () => {
   return (
-    <ul>
+    <ul className="nav-links">
       <li>
         <NavLink to="/">Main page</NavLink>
       </li>

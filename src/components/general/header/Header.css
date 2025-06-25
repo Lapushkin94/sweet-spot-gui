@@ -1,3 +1,10 @@
-.header-title {
-    color: white;
+/* TODO: fix css for nav and others */
+.header-nav {
+    display: block;
+}
+
+.header-image {
+    height: 100%;
+    display: block;
+    object-fit: contain;
 }
