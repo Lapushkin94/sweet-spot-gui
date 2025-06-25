@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const PlaceList = () => {
   return (
     <>
-      <div className="place-list">
+      <div>
         <h1>Place List</h1>
         <p>This is the place list component.</p>
       </div>

@@ -33,6 +33,6 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^4.1.10"
+    "globals": "^16.2.0"
   }
 }
