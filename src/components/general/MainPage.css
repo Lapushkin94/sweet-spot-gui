@@ -1,9 +1,88 @@
 .main-container {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 5rem;
 }
 
-.main-container h1 {
+.banner-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
     margin: 0;
+    padding: 1rem 2rem;
+    color: #4a148c;
+    line-height: 1.5;
+    background: linear-gradient(135deg, #fef6f9 0%, #eef2f7 100%);
+    border-radius: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    padding: 0 4rem;
+    box-sizing: border-box;
+}
+
+.circle {
+    text-decoration: none;
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+
+    color: var(--text-color-start);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    animation: pulseColor 5s ease-in-out infinite alternate;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+.circle-right {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    --text-color-start: #0047ab;
+    --text-color-end: #c71585;
+}
+
+.circle-center {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    --text-color-start: #a80066;
+    --text-color-end: #ff6600;
+}
+
+.circle-left {
+    background: linear-gradient(135deg, #fddb92 0%, #d1fdff 100%);
+    --text-color-start: #1a8c7a;
+    --text-color-end: #cc3366;
+}
+
+@keyframes pulseColor {
+    0% {
+        color: var(--text-color-start);
+    }
+
+    100% {
+        color: var(--text-color-end);
+    }
 }
 
 html,
@@ -25,14 +104,8 @@ main {
     margin-top: 5.5rem;
     height: 100vh;
     box-sizing: border-box;
-
-    /* TODO: change bg color to an img (reference is saved) */
-    background-color: #fff6e5;
-    font-family: sans-serif;
-
-
-    /* background-image: url('../../utils/63644.jpg');
+    background-image: url('../../utils/ss-backg.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
