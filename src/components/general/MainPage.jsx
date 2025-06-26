@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "./MainPage.css";
 
 const MainPage = () => {
   return (
-    <>
+    <div className="main-container">
       <div>
         <h1>Welcome to the Main Page</h1>
         <p>These are the main options of the application:</p>
@@ -19,7 +20,7 @@ const MainPage = () => {
           <p>View the list of places.</p>
         </div>
       </Link>
-    </>
+    </div>
   );
 };
 

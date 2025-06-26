@@ -1,7 +1,7 @@
 import Navigation from "./headerNavigation/HeaderNavigation";
 import HeaderWrapper from "./headerWrapper/HeaderWrapper";
 import "./Header.css";
-import ssLogo from "../../../utils/sweetspot_header.png";
+import ssLogo from "../../../utils/ss-header.png";
 
 const Header = () => {
   return (

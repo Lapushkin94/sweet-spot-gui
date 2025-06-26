@@ -19,12 +19,14 @@
     color: #292929;
     text-decoration: none;
     padding: 0.5rem;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links a:hover,
 .nav-links a:active,
 .nav-links a.active {
-    background: #f8df00;
+    background: #f7d242;
     border-color: #292929;
     color: #292929;
 }
@@ -54,7 +56,7 @@
     }
 
     .nav-links li {
-        margin: 0 0.5rem;
+        margin: 0 1rem;
     }
 
     .nav-links a {

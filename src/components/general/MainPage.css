@@ -1,0 +1,38 @@
+.main-container {
+    height: 100%;
+}
+
+.main-container h1 {
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 5.5rem;
+    height: 100vh;
+    box-sizing: border-box;
+
+    /* TODO: change bg color to an img (reference is saved) */
+    background-color: #fff6e5;
+    font-family: sans-serif;
+
+
+    /* background-image: url('../../utils/63644.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
