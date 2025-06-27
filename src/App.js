@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import MainPage from "./components/general/MainPage";
-import UserList from "./components/UserList";
-import PlaceList from "./components/PlaceList";
+import Users from "./components/users/Users";
+import Places from "./components/places/Places";
+import UserPlaces from "./components/places/UserPlaces";
 import Header from "./components/general/header/Header";
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/userList" element={<UserList />} />
-          <Route path="/placeList" element={<PlaceList />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/places" element={<Places />} />
+          <Route path="/:userId/places" element={<UserPlaces />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

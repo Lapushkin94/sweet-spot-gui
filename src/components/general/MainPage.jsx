@@ -8,14 +8,14 @@ const MainPage = () => {
         “Your favorite places, shared with your favorite people.”
       </p>
       <div className="circle-container">
-        <Link to="/placeList" className="circle circle-left">
+        <Link to="/places" className="circle circle-left">
           Observe
         </Link>
         {/* TODO: fix the link */}
         <Link to="/" className="circle circle-center">
           Share
         </Link>
-        <Link to="/userList" className="circle circle-right">
+        <Link to="/users" className="circle circle-right">
           Connect
         </Link>
       </div>
