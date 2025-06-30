@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import PlacesList from "../places/PlacesList";
+import placeTest1 from "../../utils/places-test/collective-test1.jpg";
 
 const PLACES = [
   {
     id: "1",
-    image: "img",
+    image: placeTest1,
     title: "collective1",
     address: "some street1",
     description: "some desc1",
@@ -16,7 +17,7 @@ const PLACES = [
   },
   {
     id: "2",
-    image: "img",
+    image: placeTest1,
     title: "collective2",
     address: "some street2",
     description: "some desc2",
@@ -28,7 +29,7 @@ const PLACES = [
   },
   {
     id: "3",
-    image: "img",
+    image: placeTest1,
     title: "collective3",
     address: "some street3",
     description: "some desc3",
