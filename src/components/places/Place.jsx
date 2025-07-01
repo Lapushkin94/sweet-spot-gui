@@ -20,13 +20,13 @@ const Place = (props) => {
         show={showMap}
         onCancel={closeMapHandler}
         header={props.address}
-        contentClass="place-item__modal-content"
-        footerClass="place-item__modal-actions"
+        contentClass="place-card"
+        footerClass="place-buttons"
         footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       >
         <div className="map-container">
-          {/* <Map center={props.coordinates} zoom={16} /> */}
-          <h2>THE MAP</h2>
+          <Map center={props.coordinates} zoom={16} />
+          {/* <h2>THE MAP</h2> */}
         </div>
       </Modal>
 

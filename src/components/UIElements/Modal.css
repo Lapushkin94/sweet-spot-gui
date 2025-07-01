@@ -11,13 +11,14 @@
 
 .modal-header {
   width: 100%;
-  padding: 1rem 0.5rem;
-  background: #2a006e;
+  padding: 1rem 0;
+  background-color: brown;
   color: white;
 }
 
 .modal-header h2 {
   margin: 0.5rem;
+  text-align: center;
 }
 
 .modal-content {
