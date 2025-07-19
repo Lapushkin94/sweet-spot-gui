@@ -5,6 +5,7 @@ const Map = (props) => {
   const mapRef = useRef();
   const { center, zoom } = props;
 
+  // TODO: adjust API key restrictions after deployment
   useEffect(() => {
     const initializeMap = async () => {
       try {

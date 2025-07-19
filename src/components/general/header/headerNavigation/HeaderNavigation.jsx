@@ -13,6 +13,13 @@ const Navigation = () => {
       <li>
         <NavLink to="/places">Places list</NavLink>
       </li>
+      {/* TODO: add current user id for show "my places" */}
+      {/* <li>
+        <NavLink to="/myPlaces">My places</NavLink>
+      </li> */}
+      <li>
+        <NavLink to="/addPlace">Add place</NavLink>
+      </li>
     </ul>
   );
 };

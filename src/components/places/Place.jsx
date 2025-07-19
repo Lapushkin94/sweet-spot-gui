@@ -26,7 +26,6 @@ const Place = (props) => {
       >
         <div className="map-container">
           <Map center={props.coordinates} zoom={16} />
-          {/* <h2>THE MAP</h2> */}
         </div>
       </Modal>
 
