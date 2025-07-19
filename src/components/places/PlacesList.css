@@ -1,27 +1,28 @@
 .no-places {
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    min-height: 40vh;
+    text-align: center;
 }
 
 .places-list {
     list-style: none;
-    margin: 1rem auto;
-    padding: 0;
-    width: 90%;
+    margin: 2rem auto;
+    padding: 0 0 2.5rem 0;
+    width: 95%;
     max-width: 40rem;
-    max-height: 50rem;
-    overflow-y: auto;
-
-    /* Firefox */
-    scrollbar-width: none;
-    /* IE */
-    -ms-overflow-style: none;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    overflow: visible;
 }
 
-.places-list::-webkit-scrollbar {
-    /* Chrome, Safari, Opera */
-    display: none;
+@media (max-width: 600px) {
+    .places-list {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+    }
 }
