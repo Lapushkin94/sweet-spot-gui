@@ -4,7 +4,8 @@ import Users from "./components/users/Users";
 import Places from "./components/places/Places";
 import UserPlaces from "./components/places/UserPlaces";
 import Header from "./components/general/header/Header";
-import PlaceForm from "./components/places/PlaceForm"
+import NewPlace from "./components/places/NewPlace"
+import EditPlace from "./components/places/EditPlace";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/places" element={<Places />} />
           {/* TODO: after fixing header nav bar add you can use this link
           <Route path="/:userId/myPlaces" element={<UserPlaces />} /> */}
-          <Route path="/addPlace" element={<PlaceForm />} />
+          <Route path="/places/new" element={<NewPlace />} />
+          <Route path="/places/edit/:placeId" element={<EditPlace />} />
           <Route path="/:userId/places" element={<UserPlaces />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

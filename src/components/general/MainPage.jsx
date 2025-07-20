@@ -11,8 +11,7 @@ const MainPage = () => {
         <Link to="/places" className="circle circle-left">
           Observe
         </Link>
-        {/* TODO: fix the link */}
-        <Link to="/" className="circle circle-center">
+        <Link to="/places/new" className="circle circle-center">
           Share
         </Link>
         <Link to="/users" className="circle circle-right">
