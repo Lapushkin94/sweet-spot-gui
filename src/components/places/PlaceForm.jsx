@@ -3,6 +3,7 @@ import Input from "../UIElements/Input";
 import { VALIDATOR_REQUIRE, VALIDATOR_MINLENGTH } from "../../utils/validators";
 import { useReducer, useCallback } from "react";
 import Button from "../UIElements/Button";
+import Textarea from "../UIElements/Textarea";
 
 const inputReducer = (state, action) => {
   switch (action.type) {
@@ -64,8 +65,9 @@ const PlaceForm = () => {
         errorText="invalid input"
         onInput={inputHandler}
       />
-      <Input
+      <Textarea
         id="description"
+        rows={3}
         label="Place description"
         validators={[VALIDATOR_REQUIRE(), VALIDATOR_MINLENGTH(3)]}
         errorText="invalid input"

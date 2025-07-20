@@ -1,8 +1,8 @@
+import "./Textarea.css";
 import { useReducer, useEffect } from "react";
-import "./Input.css";
 import { validate } from "../../utils/validators";
 
-const Input = (props) => {
+const Textarea = (props) => {
   const inputReducer = (state, action) => {
     switch (action.type) {
       case "CHANGE":
@@ -41,14 +41,13 @@ const Input = (props) => {
   useEffect(() => {
     onInput(id, value, isValid);
   }, [id, value, isValid, onInput]);
-
   return (
     <>
       <label className="label" htmlFor={props.id}>{props.label}</label>
-      <input
-        className="input"
+      <textarea
+        className="textarea"
         id={props.id}
-        type="text"
+        rows={props.rows || 3}
         onChange={changeHandler}
         onBlur={touchHandler}
         value={inputState.value}
@@ -58,4 +57,4 @@ const Input = (props) => {
   );
 };
 
-export default Input;
+export default Textarea;
