@@ -1,9 +1,9 @@
 import "./PlaceForm.css";
-import Input from "../UIElements/Input";
+import Input from "../elements/Input";
 import { VALIDATOR_REQUIRE, VALIDATOR_MINLENGTH } from "../../utils/validators";
-import Button from "../UIElements/Button";
-import Textarea from "../UIElements/Textarea";
-import useForm from "../../utils/hooks/form-hook";
+import Button from "../elements/Button";
+import Textarea from "../elements/Textarea";
+import useForm from "../hooks/form-hook";
 
 const NewPlace = () => {
   const [inputState, inputHandler] = useForm(

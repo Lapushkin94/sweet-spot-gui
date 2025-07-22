@@ -48,7 +48,7 @@ const Input = (props) => {
       <input
         className="input"
         id={props.id}
-        type="text"
+        type={props.type || "text"}
         onChange={changeHandler}
         onBlur={touchHandler}
         value={inputState.value}

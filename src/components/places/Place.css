@@ -39,6 +39,10 @@
      margin: 0.5rem;
  }
 
+.place-item__modal-content {
+    text-align: center;
+}
+
  @media (min-width: 768px) {
      .place-image {
          height: 20rem;

@@ -20,6 +20,9 @@ const Navigation = () => {
       <li>
         <NavLink to="/places/new" end>Add place</NavLink>
       </li>
+      <li>
+        <NavLink to="/authentication">Authentication</NavLink>
+      </li>
     </ul>
   );
 };

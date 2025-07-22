@@ -1,5 +1,5 @@
-import Card from "../UIElements/Card";
-import Avatar from "../UIElements/Avatar";
+import Card from "../elements/Card";
+import Avatar from "../elements/Avatar";
 import { Link } from "react-router-dom";
 import "./User.css";
 

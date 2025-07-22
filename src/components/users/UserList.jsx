@@ -1,4 +1,4 @@
-import Card from "../UIElements/Card";
+import Card from "../elements/Card";
 import User from "./User";
 import "./UserList.css";
 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import Navigation from "./headerNavigation/HeaderNavigation";
 import HeaderWrapper from "./headerWrapper/HeaderWrapper";
-import ssLogo from "../../../utils/ss-header.png";
+import ssLogo from "../../utils/ss-header.png";
 import "./Header.css";
 
 const Header = () => {
