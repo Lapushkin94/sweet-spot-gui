@@ -44,7 +44,9 @@ const Input = (props) => {
 
   return (
     <>
-      <label className="label" htmlFor={props.id}>{props.label}</label>
+      <label className="label" htmlFor={props.id}>
+        {props.label}
+      </label>
       <input
         className="input"
         id={props.id}

@@ -2,8 +2,8 @@
     list-style: none;
     margin: 2rem auto 0 auto;
     padding: 1rem;
-    width: 90%;
-    max-width: 40rem;
+    width: 60%;
+    max-width: 22rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 6px;
     background: white;
@@ -12,10 +12,24 @@
 .auth-form p {
     color: #d32f2f;
     font-size: 0.9rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 3rem 0;
 }
 
 .auth-form button {
     display: block;
     margin: 0 auto;
+}
+
+.auth-form h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.auth-form hr {
+    margin-bottom: 2rem;
+}
+
+.auth-form label {
+    margin-top: 0.5rem;
+    text-align: center;
 }
