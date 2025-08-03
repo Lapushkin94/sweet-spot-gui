@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import "./HeaderNavigation.css";
+import { useContext } from "react";
+import { AuthContext } from "../../../utils/AuthContext";
 
 const Navigation = () => {
+  const auth = useContext(AuthContext);
+
   return (
     <ul className="nav-links">
       <li>
@@ -19,14 +23,23 @@ const Navigation = () => {
       {/* <li>
         <NavLink to="/myPlaces">My places</NavLink>
       </li> */}
-      <li>
-        <NavLink to="/places/new" end>
-          Add place
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/authentication">Authentication</NavLink>
-      </li>
+      {auth.isLoggedIn && (
+        <li>
+          <NavLink to="/places/new" end>
+            Add place
+          </NavLink>
+        </li>
+      )}
+      {!auth.isLoggedIn && (
+        <li>
+          <NavLink to="/authentication">Authentication</NavLink>
+        </li>
+      )}
+      {auth.isLoggedIn && (
+        <li>
+          <button className="logout-button" onClick={auth.logout}>Logout</button>
+        </li>
+      )}
     </ul>
   );
 };
